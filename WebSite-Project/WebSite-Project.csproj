@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Employee.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\canon-camera.jpg" />
     <Content Include="Images\hp-printer.jpg" />
@@ -79,6 +80,13 @@
     <Content Include="ListByCategory.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employee.aspx.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee.aspx.designer.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ReadQueryString.aspx.cs">
       <DependentUpon>ReadQueryString.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
