@@ -68,11 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Employee.aspx" />
+    <Content Include="Footer.ascx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\canon-camera.jpg" />
     <Content Include="Images\hp-printer.jpg" />
     <Content Include="Images\lenovo-laptop.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="UserControlDemo.ascx" />
+    <Content Include="Menu.ascx" />
     <Content Include="ReadQueryString.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="ViewCart.aspx" />
@@ -80,12 +83,34 @@
     <Content Include="ListByCategory.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\CountedButton.cs" />
     <Compile Include="Employee.aspx.cs">
       <DependentUpon>Employee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Employee.aspx.designer.cs">
       <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDemo.ascx.cs">
+      <DependentUpon>UserControlDemo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControlDemo.ascx.designer.cs">
+      <DependentUpon>UserControlDemo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
     </Compile>
     <Compile Include="ReadQueryString.aspx.cs">
       <DependentUpon>ReadQueryString.aspx</DependentUpon>

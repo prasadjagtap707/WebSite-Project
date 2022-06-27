@@ -1,5 +1,11 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="WebSite_Project.Registration" %>
 
+<%@ Register Src="~/Menu.ascx" TagPrefix="uc1" TagName="Menu" %>
+
+
+<%@ Register src="Footer.ascx" tagname="Footer" tagprefix="uc2" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,6 +15,7 @@
 
         .auto-style1 {
             width: 100%;
+            height: 245px;
         }
         .auto-style3 {
             width: 311px;
@@ -19,6 +26,7 @@
         </style>
 </head>
 <body>
+    <uc1:Menu runat="server" ID="Menu" />
     <form id="form2" runat="server">
         <table class="auto-style1">
             <tr>
@@ -105,16 +113,21 @@
                 </td>
                 <td>&nbsp;</td>
             </tr>
+            <tr>
+                <asp:Label ID="Label2" runat="server"></asp:Label>
+            <asp:ValidationSummary ID="ValidationSummary2" runat="server" ForeColor="Red" />
+        
+            </tr>
         </table>
-        <div>
+        
             <asp:Label ID="lblMessage" runat="server"></asp:Label>
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
-        </div>
+        
     </form>
 
     <script type="text/javascript">
         function check(sender,data) {
-            if (isNaN(data.Value)) { // isNaN (is not a number)
+            if (isNaN(data.Value)) { 
                 data.IsValid = false;
             }
             else {
@@ -124,6 +137,7 @@
     </script>
     <form id="form1" runat="server">
         <div>
+            <uc2:Footer ID="Footer1" runat="server" />
         </div>
     </form>
 </body>
