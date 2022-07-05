@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebSite_Project.Home" %>
-<%@ Register TagPrefix="cc" Namespace="WebSite-Project.App_Code" %>
+<%--<%@ Register TagPrefix="cc" Namespace="WebSite-Project.App_Code" %>--%>
 
 <!DOCTYPE html>
 
@@ -69,7 +69,7 @@
             </table>
 
         </div>
-        <cc:CountedButton ID="cb1" runat="server" />
+<%--        <cc:CountedButton ID="cb1" runat="server" />--%>
 
     </form>
 </body>
