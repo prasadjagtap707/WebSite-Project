@@ -1,12 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListByCategory.aspx.cs" Inherits="WebSite_Project.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterDemoPage.Master" AutoEventWireup="true" CodeBehind="ListByCategory.aspx.cs" Inherits="WebSite_Project.WebForm1" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-
-    <style type="text/css">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+       
+     <style type="text/css">
         .auto-style1 {
             width: 653px;
         }
@@ -17,9 +14,9 @@
             width: 267px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <div>
 
             <asp:Image ID="Image1" runat="server" Height="59px" ImageUrl="~/Images/logo.png" Width="137px" />
@@ -76,6 +73,4 @@
             </table>
 
         </div>
-    </form>
-</body>
-</html>
+ </asp:Content>

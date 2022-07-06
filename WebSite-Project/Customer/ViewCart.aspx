@@ -1,27 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewCart.aspx.cs" Inherits="WebSite_Project.ViewCart" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterDemoPage.Master" AutoEventWireup="true" CodeBehind="ViewCart.aspx.cs" Inherits="WebSite_Project.ViewCart" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+       
+     <style type="text/css">
+        .auto-style1 {
+            width: 653px;
+        }
+        .auto-style2 {
+            width: 215px;
+        }
+        .auto-style3 {
+            width: 267px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
             <div>
-
-            <asp:Image ID="Image1" runat="server" Height="59px" ImageUrl="~/Images/logo.png" Width="137px" />
-            <br />
-            <br />
-            <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
-&nbsp; |&nbsp;
-            <asp:HyperLink ID="HyperLink2" runat="server">View Cart</asp:HyperLink>
-
-        &nbsp;|
-            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/ListByCategory.aspx">List By Cateory</asp:HyperLink>
-&nbsp;|
-            <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Registration.aspx">Registration</asp:HyperLink>
-            <br />
             <table class="auto-style1">
                 <tr>
                     <td rowspan="4">
@@ -29,9 +24,9 @@
                         <br />
                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ReadQueryString.aspx?category=electronics">Electronics</asp:HyperLink>
                         <br />
-                        <asp:HyperLink ID="HyperLink5" runat="server">Camera</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Camera</asp:HyperLink>
                         <br />
-                        <asp:HyperLink ID="HyperLink6" runat="server">Home Needs</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Home Needs</asp:HyperLink>
                     </td>
                     <td aria-orientation="horizontal" class="auto-style2">
                         &nbsp;</td>
@@ -61,6 +56,5 @@
             </table>
 
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

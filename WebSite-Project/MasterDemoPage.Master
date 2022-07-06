@@ -37,18 +37,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Furniture</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Electronics</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Camera</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Home Needs</asp:HyperLink>
-                </td>
+                
                 <td colspan="2">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
