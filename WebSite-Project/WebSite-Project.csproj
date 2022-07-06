@@ -70,6 +70,9 @@
     <Content Include="Admin\CategoireCRUD.aspx" />
     <Content Include="Admin\ManageRole.aspx" />
     <Content Include="Admin\ProductCRUD.aspx" />
+    <Content Include="Customer\Calculation.ascx" />
+    <Content Include="Customer\Calender.ascx" />
+    <Content Include="Customer\WebPartsDemo.aspx" />
     <Content Include="Employee.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="Home.aspx" />
@@ -92,6 +95,27 @@
     <Content Include="Customer\ListByCategory.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer\Calculation.ascx.cs">
+      <DependentUpon>Calculation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Calculation.ascx.designer.cs">
+      <DependentUpon>Calculation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Calender.ascx.cs">
+      <DependentUpon>Calender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Calender.ascx.designer.cs">
+      <DependentUpon>Calender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\WebPartsDemo.aspx.cs">
+      <DependentUpon>WebPartsDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\WebPartsDemo.aspx.designer.cs">
+      <DependentUpon>WebPartsDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

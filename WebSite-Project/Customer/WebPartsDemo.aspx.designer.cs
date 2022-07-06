@@ -7,155 +7,137 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebSite_Project
+namespace WebSite_Project.Customer
 {
 
 
-    public partial class WebForm1
+    public partial class WebPartsDemo
     {
 
         /// <summary>
-        /// Image1 control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// hlHome control.
+        /// WebPartManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlHome;
+        protected global::System.Web.UI.WebControls.WebParts.WebPartManager WebPartManager1;
 
         /// <summary>
-        /// HyperLink2 control.
+        /// lbCatalog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.LinkButton lbCatalog;
 
         /// <summary>
-        /// HyperLink7 control.
+        /// lbEditor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
+        protected global::System.Web.UI.WebControls.LinkButton lbEditor;
 
         /// <summary>
-        /// ScriptManagerProxy1 control.
+        /// lbDesign control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManagerProxy ScriptManagerProxy1;
+        protected global::System.Web.UI.WebControls.LinkButton lbDesign;
 
         /// <summary>
-        /// UpdatePanel1 control.
+        /// EditorZone1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.WebParts.EditorZone EditorZone1;
 
         /// <summary>
-        /// HyperLink3 control.
+        /// AppearanceEditorPart1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
+        protected global::System.Web.UI.WebControls.WebParts.AppearanceEditorPart AppearanceEditorPart1;
 
         /// <summary>
-        /// HyperLink4 control.
+        /// LayoutEditorPart1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        protected global::System.Web.UI.WebControls.WebParts.LayoutEditorPart LayoutEditorPart1;
 
         /// <summary>
-        /// HyperLink5 control.
+        /// CatalogZone1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
+        protected global::System.Web.UI.WebControls.WebParts.CatalogZone CatalogZone1;
 
         /// <summary>
-        /// HyperLink6 control.
+        /// PageCatalogPart1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
+        protected global::System.Web.UI.WebControls.WebParts.PageCatalogPart PageCatalogPart1;
 
         /// <summary>
-        /// UpdatePanel2 control.
+        /// DeclarativeCatalogPart1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
+        protected global::System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart DeclarativeCatalogPart1;
 
         /// <summary>
-        /// ddlCategories control.
+        /// WebPartZone1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCategories;
+        protected global::System.Web.UI.WebControls.WebParts.WebPartZone WebPartZone1;
 
         /// <summary>
-        /// CheckBoxList1 control.
+        /// WebPartZone2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::System.Web.UI.WebControls.WebParts.WebPartZone WebPartZone2;
 
         /// <summary>
-        /// btnOrder control.
+        /// WebPartZone3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnOrder;
-
-        /// <summary>
-        /// lblMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMsg;
-
-        /// <summary>
-        /// lblProductCount control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProductCount;
+        protected global::System.Web.UI.WebControls.WebParts.WebPartZone WebPartZone3;
     }
 }

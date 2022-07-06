@@ -29,6 +29,11 @@
         &nbsp;|
             <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/ListByCategory.aspx">List By Cateory</asp:HyperLink>
             <br />
+            <asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server">
+            </asp:ScriptManagerProxy>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            </asp:UpdatePanel>
+            <br />
             <table class="auto-style1">
                 <tr>
                     <td rowspan="4">
@@ -41,17 +46,21 @@
                         <asp:HyperLink ID="HyperLink6" runat="server">Home Needs</asp:HyperLink>
                     </td>
                     <td aria-orientation="horizontal" class="auto-style2">
-                        <asp:DropDownList ID="ddlCategories" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCategories_SelectedIndexChanged">
-                        </asp:DropDownList>
+                        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                            <ContentTemplate>
+                                <asp:DropDownList ID="ddlCategories" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCategories_SelectedIndexChanged">
+                                </asp:DropDownList>
+                                <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                                </asp:CheckBoxList>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
                     </td>
                     <td class="auto-style3">
                         &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-                        </asp:CheckBoxList>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style3">
                         &nbsp;</td>
                 </tr>
