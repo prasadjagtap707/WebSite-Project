@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterDemoPage.master.cs" Inherits="WebSite_Project.MasterDemoPage" %>
 
-<%@ Register Src="~/Menu.ascx" TagPrefix="uc1" TagName="Menu" %>
+<%@ Register Src="Menu.ascx" TagPrefix="uc1" TagName="Menu" %>
 
 
 <%@ Register src="Footer.ascx" tagname="Footer" tagprefix="uc2" %>
@@ -13,13 +13,10 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 209px;
-        }
+     <style type="text/css">
+      table{
+          width:100%;
+      }
     </style>
 </head>
 <body>
@@ -27,31 +24,38 @@
         <table class="auto-style1">
             <tr>
                 <td colspan="2">
-                    <asp:Image ID="Image1" runat="server" Height="63px" ImageUrl="~/Images/logo.png" Width="163px" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="False" Height="50px" ImageUrl="~/Images/logo.png" PostBackUrl="~/Home.aspx" Width="152px" />
                 </td>
-            </tr>
-            <tr>
-                <td colspan="2">
+                <td>
                     <uc1:Menu ID="Menu1" runat="server" />
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ListByCategory.aspx">Furniture</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ListByCategory.aspx">Electronics</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ListByCategory.aspx">Camera</asp:HyperLink>
+                <td colspan="3">
+                    
+                    <asp:Image ID="Image1" runat="server" Height="250px" ImageUrl="~/Images/banner.jpg" Width="1255px" />
                 </td>
-                <td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Furniture</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Electronics</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Camera</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Customer/ListByCategory.aspx">Home Needs</asp:HyperLink>
+                </td>
+                <td colspan="2">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td colspan="3">
                     <uc2:Footer ID="Footer1" runat="server" />
                 </td>
             </tr>

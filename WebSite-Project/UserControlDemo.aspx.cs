@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebSite_Project
 {
-    public partial class LeftSidePanel : System.Web.UI.UserControl
+    public partial class UserControlDemo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

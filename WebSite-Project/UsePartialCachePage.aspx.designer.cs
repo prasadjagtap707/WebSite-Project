@@ -11,25 +11,16 @@ namespace WebSite_Project
 {
 
 
-    public partial class LeftSidePanel
+    public partial class UsePartialCachePage
     {
 
         /// <summary>
-        /// Menu1 control.
+        /// PartialCachingDemo1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::WebSite_Project.Menu Menu1;
-
-        /// <summary>
-        /// Footer1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::WebSite_Project.Footer Footer1;
+        protected global::WebSite_Project.PartialCachingDemo PartialCachingDemo1;
     }
 }

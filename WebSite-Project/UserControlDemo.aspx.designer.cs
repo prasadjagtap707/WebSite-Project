@@ -11,25 +11,34 @@ namespace WebSite_Project
 {
 
 
-    public partial class PartialCachingDemo
+    public partial class UserControlDemo
     {
 
         /// <summary>
-        /// DropDownList1 control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// CheckBoxList1 control.
+        /// Menu2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::WebSite_Project.Menu Menu2;
+
+        /// <summary>
+        /// Footer2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebSite_Project.Footer Footer2;
     }
 }

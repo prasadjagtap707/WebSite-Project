@@ -10,45 +10,55 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 158px;
+            width: 357px;
+        }
+        .auto-style3 {
+            width: 224px;
         }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+     <form id="form1" runat="server">
         <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">Enter Role</td>
+                    <td class="auto-style3">
+                        <asp:TextBox ID="txtRole" runat="server" Width="162px"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:Button ID="btnAddRole" runat="server" OnClick="btnAddRole_Click" Text="Add Role" Width="84px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Select User</td>
+                    <td class="auto-style3">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="166px">
+                        </asp:DropDownList>
+                    </td>
+                    <td>
+                        <asp:Button ID="btnAddUserToRole" runat="server" OnClick="btnAddUserToRole_Click" Text="Add User To Role" Width="134px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="lblMsg" runat="server" Font-Bold="True"></asp:Label>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
         </div>
-        <table class="auto-style1">
-            <tr>
-                <td class="auto-style2">
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                </td>
-                <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-                </td>
-                <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server">
-                    </asp:DropDownList>
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>
-                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
     </form>
 </body>
 </html>

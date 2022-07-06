@@ -73,22 +73,60 @@
     <Content Include="Employee.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\banner.jpg" />
     <Content Include="Images\canon-camera.jpg" />
     <Content Include="Images\hp-printer.jpg" />
     <Content Include="Images\lenovo-laptop.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Login\Login.aspx" />
     <Content Include="Login\Register.aspx" />
-    <Content Include="PartialCachingDemo.ascx" />
-    <Content Include="UserControlDemo.ascx" />
     <Content Include="Menu.ascx" />
+    <Content Include="MultiViewDemo.aspx" />
+    <Content Include="PartialCachingDemo.ascx" />
     <Content Include="ReadQueryString.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Customer\ViewCart.aspx" />
+    <Content Include="UsePartialCachePage.aspx" />
+    <Content Include="UserControlDemo.aspx" />
     <Content Include="Web.config" />
     <Content Include="Customer\ListByCategory.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiViewDemo.aspx.cs">
+      <DependentUpon>MultiViewDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MultiViewDemo.aspx.designer.cs">
+      <DependentUpon>MultiViewDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartialCachingDemo.ascx.cs">
+      <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PartialCachingDemo.ascx.designer.cs">
+      <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UsePartialCachePage.aspx.cs">
+      <DependentUpon>UsePartialCachePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsePartialCachePage.aspx.designer.cs">
+      <DependentUpon>UsePartialCachePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDemo.aspx.cs">
+      <DependentUpon>UserControlDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControlDemo.aspx.designer.cs">
+      <DependentUpon>UserControlDemo.aspx</DependentUpon>
+    </Compile>
     <Content Include="App_Code\CountedButton.cs" />
     <Compile Include="Admin\CategoireCRUD.aspx.cs">
       <DependentUpon>CategoireCRUD.aspx</DependentUpon>
@@ -151,20 +189,6 @@
     <Compile Include="MasterDemoPage.Master.designer.cs">
       <DependentUpon>MasterDemoPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="PartialCachingDemo.ascx.cs">
-      <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PartialCachingDemo.ascx.designer.cs">
-      <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlDemo.ascx.cs">
-      <DependentUpon>UserControlDemo.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserControlDemo.ascx.designer.cs">
-      <DependentUpon>UserControlDemo.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Menu.ascx.cs">
       <DependentUpon>Menu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,13 +212,6 @@
     </Compile>
     <Content Include="App_Code\Users.cs" />
     <Content Include="App_Code\UsersDAL.cs" />
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
@@ -213,6 +230,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterDemoPage.Master" />
+    <Content Include="Admin\Web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
